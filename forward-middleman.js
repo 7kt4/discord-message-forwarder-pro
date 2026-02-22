@@ -73,12 +73,11 @@ client1.login(token1)
   .then(() => console.log('Logged into client 1'))
   .catch(error => console.error('Couldnt loginto client 1:', error));
 
-// Listeners de eventos para el cliente2
 client2.on('ready', () => {
-  console.log(`Conectado como ${client2.user.tag}`);
+  console.log(`Connected as ${client2.user.tag}`);
 });
 
 
 client2.login(token2)
   .then(() => console.log('Logged into client 2'))
-  .catch(error => console.error('Couldnt login to client 2:, error));
+  .catch(error => console.error('Couldnt login to client 2', error));
